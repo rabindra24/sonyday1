@@ -2,16 +2,14 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 // import Swiper JS
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 // import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
 import Image from "next/image";
 
-
 export default function Home() {
-  
   const [num, setNum] = useState(0);
 
   useEffect(() => {
@@ -19,15 +17,11 @@ export default function Home() {
     // update usestate
   }, []);
 
-
-  
-
   return (
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
-        <Image src={"/next.svg"} width={200} height={200} />
-        
+          <Image src={"/next.svg"} width={200} height={200} />
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
