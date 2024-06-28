@@ -19,6 +19,7 @@ export default function Home() {
 
   return (
     <>
+    hello
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <Image src={"/next.svg"} width={200} height={200} />
